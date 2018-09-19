@@ -1,0 +1,216 @@
+<!DOCTYPE html>	*orienta ao navegador que está sendo escrito em Html5*
+<html> *inicio de codigo*
+<head> *cabeçalho/ conteudo que usuario não enxerga*
+</head>
+
+<body> *corpo/parte visivel ao usuario*
+</body>
+
+</html> *fim de codigo*
+///////////////----------------//////////////
+
+<!DOCTYPE html>	*orienta ao navegador que está sendo escrito em Html5*
+<html lang="pt-br"> *inicio de codigo* *lang de language e "pt-br" linguagem usada*
+
+<head> *cabeçalho/ conteudo que usuario não enxerga*
+<meta charset="utf-8"> *padroniza p/ lingua portuguesa*
+<title> Local Web importações </title> *para ecanismos de buscas do google(nome da sua loja)*
+<meta name="description" content="Zakorchini é uma família de origem Ucraniana! Que se firmou em solo brasileiro com a chegada de Estefano Zakorchini."> *descrição que aparece na pesquisa google. Usa-se até 160 caracteres*
+<link rel="icon" href="zak.ico"> *imagem que ficará na aba ao lado do nome, deve ser pequenos 32x32 pixels*
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body> *corpo/parte visivel ao usuario*
+
+<header>
+<h1> Família Zakorchini </h1> *também importante p mecanismos de busca(procure por apenas 1 por pagina*
+<h2> Uma história de orgulho! </h2>
+<hr>
+</header>
+
+<nav> *seletor do painel de navegação*
+<ul> *seletor de lista por tópicos*
+<li><a href="index.html">Home</li> *tópico*
+<li><a href="historia.html">História</li> *<a> seletor*
+<li><a href="fotos.html">Albúm</li>
+<li><a href="contato.html">Contato</li>
+</ul>
+</nav>
+
+<hr>
+
+<section>
+<h2>Bem vindo!</h2>
+<img src="uk1.png">
+<h3>Este site dará uma breve descrição da família Zakorchini.</h3>
+</section>
+
+<footer>
+<p>Criado por Cleiton W. Zakorchini</p>
+</footer>
+
+
+<hr> *insere linha horizontal*
+</body>
+
+</html> *fim de codigo*
+
+www.favicon.cc fornece icones p/ ser introduzido.
+
+salvar como index.html
+tipo .txt
+selecionar codificação UTF-8
+
+################################################
+
+CSS
+
+body
+{
+background-color: #00ccff; *pinta fundo*
+}
+
+h1,h2,h3
+{
+font-family:papyrus,arial; *muda fonte*
+}
+
+section
+{
+background-color:#00ff00; *pinta a seção*
+font-family:arial; *muda fonte da seção*
+padding:10px; *coloca espaçamento entre elementos da seção*
+}
+
+footer
+{
+background-color:#000000; *muda cor do rodapé*
+color:#ffffff; *muda cor da fonte do rodapé*
+font-family:papyrus,arial; *muda fonte do rodapé*
+font-size:12px; *muda o tamanho da fonte do rodapé*
+text-align:center; *alinha texto ao centro*
+padding:8px; *espaçamento em cima e embaixo do texto*
+}
+
+img, video *imagem e video* separados por virgula diz q são independentes*
+{
+max-width:100%; *torna responsivo imagens e videos* largura(weidth)*
+}
+
+nav
+{
+background-color: #000000; *cor de fundo do menu navegador*
+height:35px; *altura do menu navegador*
+font-family:papyrus; *
+font-weight:bold; *negrito*
+font-size:14px;
+}
+
+nav ul * sem virgula indica que ul está dentro de nav*
+{
+height:auto;
+padding:8px 0px;
+margin:0px; *elimina margem e retira pontos*
+}
+
+nav li
+{
+display:inline; *muda os tópicos p posição horizontal(lado a lado)*
+padding:10px; *espaçamento entre tópicos*
+margin:0px;
+}
+
+nav a
+{
+text-decoration:none; *retira sublinhado do link*
+color:#ffffff;
+padding:8px 8px 8px 8px; *ajusta altura laterais e pé*
+}
+
+nav a:hover *comando que executa uma ação conforme posiciona o mouse*
+{
+color:#000000;
+background-color:#fffff0;
+}
+
+@media all and (min-width:960px) *funções especificas condicionadas*no caso(min-width;960px quer dizer a partir de 960pixels)*
+{
+body
+{
+width:960px;
+margin:auto;
+}
+
+}
+
+@media all and (max-width:480px) *funções especificas condicionadas*no caso(min-width;960px quer dizer abaixo de 480pixels)*
+{
+{
+
+nav
+{
+height:100%; *tornar responsivo*
+}
+
+nav li
+{
+display:block; *tornar menu vertical*
+padding:10px;
+margin:opx;
+}
+
+}
+
+
+###############################
+
+<!Doctype html> <!--indica ao navegador que o código sera trabalhado em html5-->
+<html lang="pt-br"> <!--inicio do código html e indicação que texto usado seguira formatação de linguagem portugues brasileiro-->
+<head> <!--cabeça do código, parte que usuário não enxerga, usado pelos navegadores e mecanismos de busca-->
+<meta charset="utf-8"> <!--tipificação do código usado-->
+<title>Viagens</title> <!--titulo, mecanismos de busca-->
+<meta name="descripition" content="uma viagem, varios destinos. florianopolis, gramado, las palomas, montevideo, colonia del sacramento, buenos aires, puerto e foz do iguaçu e cidade del leste> <!--descrição, mecanismos de busca-->
+<link rel="stylesheet" type="text/css" href="style.css"> <!--chamada do css para formatação de estilo da pagina-->
+</head> <!--fecha cabeça-->
+
+<body> 	<!--corpo, inicio da parte visivel ao usuario-->
+
+<header>	<!--cabeça do corpo, titulo-->
+<h1>VIAGENS</h1>
+<h2>Uma viagem, vários destinos!</h2>
+</header>
+
+<nav>		<!--menu de navegação-->
+<ul>		<!--lista-->
+<li><a href="indexviagens.html">Home</a></li>
+<li><a href="historia.html">História</a></li>
+<li><a href="planejamento.html">Planejamento</a></li>
+<li><a href="partida.html">Partida</a></li>
+<li><a href="florianopolis.html">Florianópolis-Br</a></li>
+<li><a href="gramado.html">Gramado-Br</a></li>
+<li><a href="forte santa tereza.html">Forte Santa Tereza-Ur</a></li>
+<li><a href="las palomas.html">Las Palomas-Ur</a></li>
+<li><a href="punta del leste.html">Punta del Leste-Ur</a></li>
+<li><a href="casapueblo.html">Casapueblo-Ur</a></li>
+<li><a href="montevideo.html">Montevideo-Ur</a></li>
+<li><a href="colonia del sacramento.html">Colonia del Sacramento-Ur</a></li>
+<li><a href="buenos aires.html">Buenos Aires-Ar</a></li>
+<li><a href="puerto iguazu.html">Puerto Iguazu-Ar</a></li>
+<li><a href="foz do iguacu.html">Foz de Iguaçu-Br</a></li>
+<li><a href="cidade del leste.html">Cidade del Leste-Pa</a></li>
+<li><a href="rolandia.html">Rolândia-Br</a></li>
+<li><a href="perengues.html">Perengues</a></li>
+</ul>
+</nav>
+
+<section>	<!--seção, parte descritiva, ilustrativa do site-->
+<p>Vou descrever como fizemos essa longa viagem pelo sul do brasil e nossa passagem por alguns lugares visitados no Uruguai, Argentina e Paraguai.</p>
+</section>
+
+<footer>	<!--rodapé, local descritivo do criador-->
+<p>Criado por Cleiton</p>
+</footer>
+
+</body>
+</html>
+

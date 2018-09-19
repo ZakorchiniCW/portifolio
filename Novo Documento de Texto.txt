@@ -1,0 +1,40 @@
+<!DOCTYPE html>	
+<html lang="pt-br"> 
+
+<head> 
+<meta charset="utf-8"> 
+<title> Família Zakorchini </title> 
+<meta name="description" content="Zakorchini é uma família de origem Ucraniana! Que se firmou em solo brasileiro com a chegada de Estefano Zakorchini.">
+<link rel="icon" href="zak.ico">
+</head>
+
+<body> 
+<header>
+<h1> Família Zakorchini </h1> 
+<h2> Uma história de orgulho! </h2>
+<hr>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</li>
+<li><a href="historia.html">História</li>
+<li><a href="fotos.html">Albúm</li>
+<li><a href="contato">Contato</li>
+</ul>
+</nav>
+
+<hr>
+
+<section>
+<h2>Contato</h2>
+<img src="uk1.png">
+<h3>para entrar em contato com criador do site envie um email.</h3>
+<a href="mailto:cleiton.wilson@hotmail.com">
+<img src="email.png" alt="email zakorchini" title="email">
+</a>
+</section>
+
+</body>
+
+</html>
