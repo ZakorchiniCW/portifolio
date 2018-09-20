@@ -1,4 +1,5 @@
-﻿/* comentario*/
+
+/* comentario*/
 body
 {
 background-color: #00ccff;
@@ -13,6 +14,10 @@ h2,h3
 font-family:verdana,arial;
 }
 
+p
+{
+text-align: justify;
+}
 section
 {
 background-color:#ccccff;
