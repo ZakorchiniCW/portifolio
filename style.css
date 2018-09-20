@@ -69,8 +69,10 @@ background-color:#fffff0;
 
 body
 {
-width:960px;
+width:auto;
+max-width: 960px;
 margin:auto;
+height:auto;
 }
 
 }
