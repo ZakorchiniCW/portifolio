@@ -4,9 +4,13 @@ body
 background-color: #00ccff;
 }
 
-h1,h2,h3
+h1
 {
-font-family:papyrus,arial;
+    font-family: monospace;
+}
+h2,h3
+{
+font-family:verdana,arial;
 }
 
 section
@@ -16,15 +20,7 @@ font-family:arial;
 padding:10px;
 }
 
-footer
-{
-background-color:#000000;
-color:#ffffff;
-font-family:papyrus,arial;
-font-size:22px;
-text-align:center;
-padding:10px;
-}
+
 
 img, video
 {
@@ -36,7 +32,7 @@ nav
 {
 background-color: #000000;
 height:35px;
-font-family:papyrus;
+font-family:sans-serif;
 font-weight:bold;
 font-size:14px;
 }
@@ -96,3 +92,13 @@ margin:opx;
 
 }
 
+footer
+{
+background-color:#000000;
+color:#ffffff;
+border: 0;
+font-family:papyrus,arial;
+font-size:14px;
+text-align: center;
+padding:1px;
+}
