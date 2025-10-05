@@ -26,11 +26,13 @@ body {
 h1, h2, h3 {
     color: var(--text-light);
     margin-bottom: 0.5em;
-    font-weight: 700;
+    font-weight: 600; /* Levemente ajustado para melhor leitura */
 }
 
 h1 { font-size: 3rem; }
 h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.1rem; color: var(--accent-color); font-weight: 400; } /* Estilo para o H4 */
 p { color: var(--text-muted); }
 
 /* 3. Layout Principal */
@@ -45,7 +47,7 @@ p { color: var(--text-muted); }
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%;
+    padding: 15px 5%;
     background: rgba(30, 30, 44, 0.95); /* Semi-transparente */
     position: sticky;
     top: 0;
@@ -53,11 +55,18 @@ p { color: var(--text-muted); }
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.logo {
+.logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-light);
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--accent-color);
-    text-decoration: none;
+}
+
+.logo-container img {
+    margin-right: 10px;
+    border-radius: 50%; /* Deixa a imagem redonda */
 }
 
 .navbar nav a {
@@ -72,8 +81,11 @@ p { color: var(--text-muted); }
     color: var(--accent-color);
 }
 
-/* 5. Botões (Modernos e com efeito) */
-.btn-primary, .btn-secondary, .btn-cta {
+/* 5. Botões (Modernos e com efeito) - Mantido para uso futuro */
+.btn-primary {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    border: 2px solid var(--accent-color);
     display: inline-block;
     padding: 10px 20px;
     margin-top: 20px;
@@ -81,166 +93,98 @@ p { color: var(--text-muted); }
     text-decoration: none;
     font-weight: 600;
     transition: transform var(--transition-speed), background var(--transition-speed);
-    text-align: center;
 }
-
-.btn-primary {
-    background-color: var(--accent-color);
-    color: var(--text-light);
-    border: 2px solid var(--accent-color);
-    margin-right: 15px;
-}
-
-.btn-secondary {
-    background-color: transparent;
-    color: var(--accent-color);
-    border: 2px solid var(--accent-color);
-}
-
-.btn-primary:hover, .btn-secondary:hover {
-    transform: translateY(-3px); /* Efeito sutil de levantar */
-}
-
 .btn-primary:hover {
-    background-color: #7a7aff; /* Tom levemente mais claro */
+    transform: translateY(-3px);
+    background-color: #7a7aff;
     border-color: #7a7aff;
 }
 
-/* 6. Seção Hero */
+/* 6. Seção Hero (para a index.html) */
 .hero-section {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     min-height: 80vh;
+    text-align: center;
     padding: 0 5%;
-    max-width: 1200px;
-    margin: 0 auto;
 }
-
 .hero-content {
-    max-width: 600px;
+    max-width: 800px;
 }
-
 .hero-content h1 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     line-height: 1.1;
     color: var(--accent-color);
+    margin-bottom: 5px;
 }
 
-.hero-content .role {
-    font-size: 1.5rem;
-    color: var(--text-light);
-    margin-bottom: 25px;
-}
-
-.hero-image img {
-    width: 300px; /* Tamanho da imagem */
-    height: 300px;
-    object-fit: cover;
-    border-radius: 50%; /* Imagem redonda */
-    border: 5px solid var(--card-bg);
-    box-shadow: 0 0 30px rgba(93, 93, 255, 0.3); /* Sombra sutil de destaque */
-}
-
-/* 7. Seção Projetos (Grid) */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    margin-top: 30px;
-}
-
-.project-card {
+/* 7. Cartões de Histórico (Vida Acadêmica e Profissional) */
+.history-card {
     background-color: var(--card-bg);
-    padding: 30px;
+    padding: 25px;
     border-radius: var(--border-radius);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    transition: transform var(--transition-speed);
+    margin-bottom: 25px;
+    transition: box-shadow var(--transition-speed);
 }
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 0 10px var(--accent-color);
+.history-card:hover {
+    box-shadow: 0 5px 20px rgba(93, 93, 255, 0.2);
 }
-
-.project-card h3 {
-    color: var(--accent-color);
+.history-card h3 {
+    margin-top: 0;
 }
-
-.project-card .tags span {
-    display: inline-block;
-    background-color: #3f3f5a;
-    color: var(--text-light);
-    font-size: 0.8rem;
-    padding: 5px 10px;
-    border-radius: 5px;
-    margin-right: 5px;
-    margin-top: 10px;
-}
-
-.project-card a {
-    display: block;
+.history-card img {
     margin-top: 15px;
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 600;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-/* 8. Rodapé */
+/* 8. Contato */
+.contact-section {
+    text-align: center;
+    padding: 60px 5%;
+}
+.contact-section h2 {
+    margin-bottom: 30px;
+}
+.contact-section a img {
+    transition: transform 0.3s;
+    border-radius: 50%; /* Borda mais suave para ícones */
+}
+.contact-section a img:hover {
+    transform: scale(1.1);
+}
+
+/* 9. Rodapé */
 .footer-section {
     background-color: var(--card-bg);
     text-align: center;
-    padding: 40px 5%;
+    padding: 20px 5%;
     margin-top: 50px;
 }
-
-.footer-section h3 {
-    color: var(--text-light);
-    margin-bottom: 10px;
-}
-
-.social-links a {
-    color: var(--text-light);
-    margin: 0 15px;
-    text-decoration: none;
-    transition: color var(--transition-speed);
-}
-
-.social-links a:hover {
-    color: var(--accent-color);
-}
-
-.copyright {
-    margin-top: 20px;
-    font-size: 0.9rem;
+.footer-section p {
     color: var(--text-muted);
+    font-size: 0.9rem;
 }
 
-/* 9. Responsividade */
+/* 10. Responsividade */
 @media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 1.7rem; }
+    
     .navbar {
         flex-direction: column;
         padding-top: 10px;
     }
+    .navbar nav {
+        margin-top: 10px;
+    }
     .navbar nav a {
         margin: 0 10px 10px 0;
-    }
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-        min-height: auto;
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .hero-content h1 {
-        font-size: 3rem;
-    }
-    .hero-image {
-        order: -1; /* Move a imagem para cima no mobile */
-        margin-bottom: 30px;
-    }
-    .hero-image img {
-        width: 200px;
-        height: 200px;
+        display: inline-block;
     }
 }
